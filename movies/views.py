@@ -10,5 +10,5 @@ def index(request):
     # Movie.objects.get(id=1)  # getting single movie object with the id
     movies = Movie.objects.all()  # to get all the movies objects
 
-    return render(request, 'index.html', {'movies': movies})
+    return render(request, 'movies/index.html', {'movies': movies})
     # return HttpResponse(output)
